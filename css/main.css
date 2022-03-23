@@ -7,6 +7,8 @@ body    {
     line-height: 140%;
 }
 
+
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 500;
     line-height: 140%;
@@ -249,13 +251,11 @@ ul, li {
     margin-bottom: 52px;
 }
 
-.slide {
-    display: none;
-}
-
-.slide.active {
-    display: block;
-}
+.swiper2 {
+    max-width: 616px;
+    max-height: 388px;
+    margin-left: 22px;
+  }
 
 
 .offer__btn-down    {
@@ -282,12 +282,16 @@ ul, li {
 
 .offer-img_right {
     width: 190px;
-    margin: 68px 0 0 -96px;
+    margin: -279px 0 0 -86px;
+    z-index: 10;
+    position: absolute;
 }
 
 .offer-img_left {
     width: 197px;
     margin: -532px 0 0 352px;
+    z-index: 10;
+    position: absolute;
 }
 
 .slider-dots {
@@ -400,6 +404,7 @@ ul, li {
 #btn-prev, #btn-next {
     cursor: pointer;
     transition: .2s ease-in-out;
+    width: 24px;
 }
 
 #btn-prev:hover, #btn-next:hover {
@@ -420,12 +425,12 @@ ul, li {
     position: relative;
 }
 
-.dots-wrapper {
-    display: flex;
+.dots-wrapper  {
     position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -90%);
+    top: 90% !important;
+    left: 50% !important;
+    transform: translate(-10%, -10%) !important;
+    z-index: 10;
 }
 
 .dot.active {
@@ -444,7 +449,7 @@ ul, li {
     margin-right: 0;
 }
 
-.flex-wrapper {
+.slider-wrap {
     margin-right: 65px;
 }
 
@@ -991,7 +996,7 @@ input, textarea {
         margin-left: auto;
     }
 
-    .flex-wrapper {
+    .slider-wrap {
         margin: 0 0 50px 0;
     }
 
@@ -1093,6 +1098,11 @@ input, textarea {
 }
 
 @media (max-width: 768px)	{
+
+    .swiper {
+        max-width: 540px;
+    }
+
     .section-title_related, .section-title_team, .section-title_about {
         text-align: center;
     }
@@ -1207,8 +1217,16 @@ input, textarea {
         width: 194px;
     }
 
+    .swiper {
+        max-width: 380px;
+    }
+
 }
 @media (max-width: 480px)	{
+
+    .swiper {
+        max-width: 247px;
+    }
 	.offer_img {
         width: 283px;
         height: 444px;
