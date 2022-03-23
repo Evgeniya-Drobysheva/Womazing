@@ -71,30 +71,32 @@
             <div class="row">
                 <div class="col-12 col-lg-7">
                     <div class="offer">
-                        <div class="slider-wrapper" id="offer-slider">
-                            <div class="slide active">
-                                <h1 class="title offer-title">
-                                    Новые поступления в этом сезоне
-                                </h1>
-                                <p class="offer-intro">
-                                    Утонченные сочетания и бархатные оттенки - вот то, что вы искали в этом сезоне. Время исследовать.
-                                </p>
-                            </div>
-                            <div class="slide">
-                                <h1 class="offer-title">
-                                    Что-то новенькое. Мы заждались тебя.
-                                </h1>
-                                <p class="offer-intro">
-                                    Надоело искать себя в сером городе? Настало время новых идей, свежих красок и вдохновения с Womazing!
-                                </p>
-                            </div>
-                            <div class="slide">
-                                <h1 class="offer-title">
-                                    Включай новый сезон с WOMAZING
-                                </h1>
-                                <p class="offer-intro">
-                                    Мы обновили ассортимент - легендарные коллекции и новинки от отечественных дизайнеров.
-                                </p>
+                        <div class="slider-wrapper swiper swiper1" id="offer-slider">
+                            <div class="swiper-wrapper">
+                                <div class="slide active swiper-slide">
+                                    <h1 class="title offer-title">
+                                       Новые поступления в этом сезоне
+                                    </h1>
+                                    <p class="offer-intro">
+                                        Утонченные сочетания и бархатные оттенки - вот то, что вы искали в этом сезоне. Время исследовать.
+                                    </p>
+                                </div>
+                                <div class="slide swiper-slide">
+                                    <h1 class="offer-title title">
+                                        Что-то новенькое. Мы заждались тебя.
+                                    </h1>
+                                    <p class="offer-intro">
+                                        Надоело искать себя в сером городе? Настало время новых идей, свежих красок и вдохновения с Womazing!
+                                    </p>
+                                </div>
+                                <div class="slide swiper-slide">
+                                    <h1 class="offer-title title">
+                                        Включай новый сезон с WOMAZING
+                                    </h1>
+                                    <p class="offer-intro">
+                                        Мы обновили ассортимент - легендарные коллекции и новинки от отечественных дизайнеров.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div class="offer__btns d-flex align-items-center">
@@ -103,8 +105,8 @@
                                 Открыть магазин
                             </a>
                         </div>
-                        <div class="slider-dots d-flex">
-                            <span class="slider-dot active"></span>
+                        <div class="slider-dots swiper-pagination1">
+                            <span class="slider-dot"></span>
                             <span class="slider-dot"></span>
                             <span class="slider-dot"></span>
                         </div>
@@ -112,15 +114,31 @@
                 </div>
                 <div class="col-12 col-lg-5">
                     <div class="wrapper-img">
-                        <div class="offer_img">
-                            <img src="img/photo1.jpg" alt="">
+                        <div class="swiper swiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="offer_img">
+                                        <img src="img/photo1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="offer_img">
+                                        <img src="img/photo1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="offer_img">
+                                        <img src="img/photo1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="offer-img d-none d-md-block offer-img_left">
                             <img src="img/photo2.jpg" alt="">
                         </div>
                         <div class="offer-img d-none d-md-block offer-img_right">
                             <img src="img/photo3.jpg" alt="">
-                        </div>  
+                        </div>
                     </div>
                 </div>
             </div>
@@ -237,29 +255,39 @@
                    </h2>
                </div>
                <div class="col-12 d-flex align-items-center flex-column flex-lg-row">
-                    <div class="flex-wrapper d-flex align-items-center">
-                        <div id="btn-prev">
-                            <img class="arrow" src="img/arrow-prev.svg" alt="">
-                        </div>
-                        <div class="slider-wrapper d-flex" id="team-slider">
-                            <div class="slide active">
-                                <img src="img/slide1.jpg" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="img/slide2.jpg" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="img/slide3.jpg" alt="">
-                            </div>  
-                            <div class="dots-wrapper">
+                    <div class="slider-wrap d-flex align-items-center">
+			<div id="btn-prev">
+				<img class="arrow" src="img/arrow-prev.svg" alt="">
+			</div>
+			<!-- Slider main container -->
+			<div class="swiper d-flex swiper2">
+			<!-- Additional required wrapper -->
+
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+					    <img src="img/slide1.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+					    <img src="img/slide2.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+					    <img src="img/slide3.jpg" alt="">
+					</div>
+				 </div>
+
+                        
+                            <div class="dots-wrapper swiper-pagination2">
                                 <span class="dot active"></span>
                                 <span class="dot"></span>
                                 <span class="dot"></span>
-                            </div> 
+                            </div>
                         </div>
+
                         <div id="btn-next">
-                            <img class="arrow" src="img/arrow-next.svg" alt="">
-                        </div> 
+                                <img class="arrow" src="img/arrow-next.svg" alt="">
+                         </div>
+                  
                     </div>
                     <div class="team-content">
                         <h3 class="team-title">
