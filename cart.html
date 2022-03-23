@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOMAZING / Корзина</title>
+    <meta name="description" content="Создай свой уникальный стиль с WOMAZING">
+	<meta name="keywords" content="стиль, купить одежду, интернет-магазин">
+	<!-- OG Tags -->
+	<meta property="og:title" content="WOMAZING">
+	<meta property="og:description" content="Создай свой уникальный стиль с WOMAZING">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://sitename.ru/img/preview.jpg">
+	<meta property="og:site_name" content="WOMAZING">
+	<!-- Styling -->
+	<meta name="theme-color" content="#4985FF">
+	<link rel="apple-touch-icon" href="#">
+	<link rel="icon" type="image/svg" href="img/favicon.svg">
+	<!-- CSS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/reboot.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-3 col-lg-2">
+                    <a href="./index.html" class="logo"></a>
+                </div>
+                <div class="col-7 col-lg-7">
+                    <ul class="menu-list d-md-flex d-none justify-content-center align-items-center">
+                        <li class="menu-list__item">
+                            <a href="./index.html" class="menu-list__link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="./shop.html" class="menu-list__link">
+                                Магазин
+                            </a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="./about.html" class="menu-list__link">
+                                О бренде
+                            </a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="./contacts.html" class="menu-list__link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2 col-lg-3 d-flex">
+                    <button type="button" class="btn-tel d-none d-lg-block"></button>
+                    <a href="tel:+74958235412" class="link-tel d-none d-lg-block">
+                        +7 (495) 823-54-12
+                    </a>
+                    <a href="./cart.html" class="cart-img ms-auto"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="cart" id="cart">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="title">
+                        Корзина
+                    </h1>
+                    <ul class="breadcrumbs d-flex align-items-center">
+                        <li>
+                            <a href="./index.html" class="d-flex align-items-center">
+                                Главная
+                            </a>
+                        </li>
+                        <li>
+                            <span>
+                                Корзина
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="cart-wrapper">
+                        <div class="cart-titles d-flex">
+                            <h4 class="cart-title cart-title_item">
+                                Товар
+                            </h4>
+                            <h4 class="cart-title cart-title_price">
+                                Цена
+                            </h4>
+                            <h4 class="cart-title cart-title_number">
+                                Количество
+                            </h4>
+                            <h4 class="cart-title cart-title_total">
+                                Всего
+                            </h4>
+                        </div>
+                        <div class="cart-content d-flex align-items-center">
+                            <div class="cart-content__item d-flex align-items-center">
+                                <button class="btn-close"></button>
+                                <div class="cart-content__img">
+                                    <img src="img/product1.jpg" alt="">
+                                </div>
+                                <span class="cart-content__name">
+                                    Футболка USA
+                                </span>
+                            </div>
+                            <span class="cart-content__price">
+                                $129
+                            </span>
+                            <div class="cart-content__wrap">
+                                <input type="number" class="cart-content__number"></input>
+                            </div>
+                            <span class="cart-content__price cart-content__price_total">
+                                $129
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <input type="text" class="form__input form__input_cart" placeholder="Введите купон">
+                </div>
+                <div class="col-12 col-md-8 col-lg-3">
+                    <button class="btn-ghost btn-ghost_margin">
+                        Применить купон
+                    </button>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <button class="btn-ghost ms-lg-auto">
+                        Обновить корзину
+                    </button>
+                </div>
+                <div class="col-12">
+                    <div class="cart-total ms-auto">
+                        <span>
+                            Подытог:
+                        </span>
+                        <span>
+                            $129
+                        </span>
+                        <div class="cart-subtotal d-block d-sm-flex">
+                            <div class="total d-flex">
+                                <span>
+                                    Итого
+                                </span>
+                                <span>
+                                    $129
+                                </span>
+                            </div>
+                            <button class="btn btn_cart">
+                                Оформить заказ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <a href="#" class="footer-logo"></a>
+                    <ul class="footer-rights">
+                        <li class="footer-rights__item">
+                            <span>
+                                © Все права защищены
+                            </span>
+                        </li>
+                        <li class="footer-rights__item">
+                            <a href="#">
+                                Политика конфиденциальности
+                            </a>
+                        </li>
+                        <li class="footer-rights__item">
+                            <a href="#">
+                                Публичная оферта
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 d-none d-lg-block col-md-7 col-lg-6">
+                    <ul class="footer-menu d-sm-flex d-none">
+                        <li class="footer-menu__item">
+                            <a href="./index.html" class="footer-menu__link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="./shop.html" class="footer-menu__link">
+                                Магазин
+                            </a>
+                            <ul class="footer-menu__shop">
+                                <li class="footer-menu__shop-item">
+                                    <a href="#" class="footer-menu__shop-link">
+                                        Пальто
+                                    </a>
+                                </li>
+                                <li class="footer-menu__shop-item">
+                                    <a href="#" class="footer-menu__shop-link">
+                                        Свитшоты
+                                    </a>
+                                </li>
+                                <li class="footer-menu__shop-item">
+                                    <a href="#" class="footer-menu__shop-link">
+                                        Кардиганы
+                                    </a>
+                                </li>
+                                <li class="footer-menu__shop-item">
+                                    <a href="#" class="footer-menu__shop-link">
+                                        Толстовки
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="./about.html" class="footer-menu__link">
+                                О бренде
+                            </a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="./contacts.html" class="footer-menu__link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="contacts-us">
+                        <a href="tel:+74958235412" class="footer-tel">
+                            +7 (495) 823-54-12
+                        </a>
+                        <a href="mailto:hello@womazing.com" class="mail">
+                            hello@womazing.com
+                        </a>
+                        <div class="social-wrapper d-flex">
+                            <!--noindex--> 
+                            <a href="https://www.instagram.com/" class="instagram ms-lg-auto" rel="nofollow noopener noreferrer" target="_blank"></a>
+                            <!--/noindex-->
+                            <!--noindex--> 
+                            <a href="https://facebook.com/" class="facebook" rel="nofollow noopener noreferrer" target="_blank"></a>
+                            <!--/noindex-->
+                            <!--noindex-->
+                            <a href="https://twitter.com/" class="twitter" rel="nofollow noopener noreferrer" target="_blank"></a>
+                            <!--/noindex-->
+                        </div>
+                        <img src="img/visa-mastercard.png" alt="" class="pay ms-lg-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
