@@ -40,3 +40,66 @@ $(window).on('scroll', function () {
     });
       
     });
+
+var mySwiper = new Swiper('.swiper1', {
+
+  loop: true,
+  effect:'fade',
+
+  pagination: {
+    el: '.swiper-pagination1',
+    type: 'bullets',
+    clickable: true
+  },
+autoplay: {
+  delay: 8000,
+  disableOnInteraction: false
+},
+fadeEffect: {
+  crossFade: true
+},
+});
+
+var swiper = new Swiper('.swiper2', {
+  // Optional parameters
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination2',
+    type: 'bullets',
+    clickable: true
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '#btn-next',
+    prevEl: '#btn-prev',
+  },
+
+  autoplay: {
+    delay: 8000,
+    disableOnInteraction: false
+  },
+
+});
+
+
+var mylastSwiper = new Swiper('.swiper3', {
+
+  loop: true,
+  effect:'fade',
+
+autoplay: {
+  delay: 8000,
+  disableOnInteraction: false
+},
+
+pagination: {
+  el: '.swiper-pagination3',
+  type: 'bullets',
+  clickable: true
+},
+fadeEffect: {
+  crossFade: true
+},
+});
