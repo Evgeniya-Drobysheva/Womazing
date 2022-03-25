@@ -257,6 +257,16 @@ ul, li {
     margin-left: 22px;
   }
 
+.swiper-pagination-bullet {
+    width: 30px;
+    height: 4px;
+    background: #D1D1D1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #000;
+}	
+
 
 .offer__btn-down    {
     background: rgba(110, 156, 159, 0.1);
